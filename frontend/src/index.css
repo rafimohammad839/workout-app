@@ -101,3 +101,18 @@ div.error {
 input.error {
   border: 1px solid var(--error);
 }
+
+/* Larger Tablets, smaller than Desktop */
+@media (max-width: 991px) {
+  .home {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+/* Medium and smaller device */
+@media (max-width: 768px) {
+  .home {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
