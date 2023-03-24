@@ -80,6 +80,11 @@ input {
   border-radius: 4px;
   box-sizing: border-box;
 }
+
+input:focus-visible {
+  outline-color: #5353dbb3;
+}
+
 form button {
   background: var(--primary);
   border: 0;
@@ -102,6 +107,40 @@ input.error {
   border: 1px solid var(--error);
 }
 
+/* navbar */
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  margin-left: 10px;
+}
+
+.username {
+  margin-right: .5rem;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+nav button {
+  background: #fff;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: 'Poppins';
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* auth forms */
+form.signup, form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
 /* Larger Tablets, smaller than Desktop */
 @media (max-width: 991px) {
   .home {
